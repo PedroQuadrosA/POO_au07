@@ -1,0 +1,30 @@
+@startuml classe metodo e atributo
+
+title Diagrama de Classes
+
+class Pessoa{
+    - nome:String 
+    - endereco: String
+    + construtor(nome, endereco)
+    + pegar_nome(nome)
+}
+
+class Carro{
+    - marca:String 
+    - modelo: String
+    - cor: String
+    - cc: Integer
+    - ano: Integer
+    + construtor(marca, modelo, cor, cc, ano)
+    + calcular_ipva(ano)
+}
+
+class Animal{
+    - nome: String
+    - peso: Double
+    - nascimento: Data
+    + constructor(nome, peso, idade)
+    + calcula_idade(nascimento)
+}
+
+@enduml
